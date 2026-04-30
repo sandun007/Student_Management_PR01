@@ -95,8 +95,7 @@ class TeacherController extends Controller
         }
         catch (\Exception $e) {
             return redirect()->back()->withInput()->withErrors(['error' => 'Failed to create teacher: ' . $e->getMessage()]);
-        }
-    }
+        }    }
 
     public function edit($id)
     {
